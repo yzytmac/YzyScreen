@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ScreenAdaptive.iml" filepath="$PROJECT_DIR$/ScreenAdaptive.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yzyscreenadaptive/yzyscreenadaptive.iml" filepath="$PROJECT_DIR$/yzyscreenadaptive/yzyscreenadaptive.iml" />
     </modules>
   </component>
 </project>
