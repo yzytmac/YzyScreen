@@ -1,7 +1,7 @@
 # ScreenAdaptive
 最屌的屏幕适配框架-100%适配所有屏幕  
 使用步骤：  
-1、将yzyscreenadaptive-release.aar引入自己的项目中依赖好  
+1、yzy_screen_adaptive.aar引入自己的项目中依赖好  
 2、在java代码中拿到控件
 3、ViewUtil.getInstance(this,baseWidth,baseHeight).setLayoutParams(mTv,widthPx,heightPx,0,0,0,0);  
 baseWidth和baseHeight是美工ui图的基准宽高，即美工是在什么分辨率的屏幕上标注的  
