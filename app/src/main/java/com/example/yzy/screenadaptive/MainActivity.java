@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mTv = (TextView) findViewById(R.id.tv);
-        ViewUtil.getInstance(this).setLinearLayoutParams(mTv,1070,1760,0,0,0,0);
+        ViewUtil.getInstance(this).setLayoutParams(mTv,1070,1760,0,0,0,0);
     }
 }
