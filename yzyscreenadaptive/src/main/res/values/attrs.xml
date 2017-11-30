@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PercentLinearLayout">
+        <attr name="layout_percent_width" format="float"/>
+        <attr name="layout_percent_height" format="float"/>
+    </declare-styleable>
+</resources>

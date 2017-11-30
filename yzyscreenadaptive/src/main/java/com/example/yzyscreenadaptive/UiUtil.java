@@ -21,9 +21,6 @@ public class UiUtil {
     private float displayWidth;
     private float displayHeight;
 
-    public static UiUtil getInstance(Context pContext){
-        return getInstance(pContext,1080,1920);
-    }
 
     public static UiUtil getInstance(Context pContext,int baseWidth,int baseHeight){
         if(instance==null) {

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.yzyscreenadaptive.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yzy.screenadaptive.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#ff0000"
+        android:text="Hello World!"
+        app:layout_percent_height="0.5"
+        app:layout_percent_width="0.5"/>
+
+    <TextView
+        android:layout_below="@id/tv"
+        android:layout_toRightOf="@id/tv"
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:text="Hello World!"
+        app:layout_percent_height="0.5"
+        app:layout_percent_width="0.5"/>
+
+
+</com.example.yzyscreenadaptive.PercentRelativeLayout>

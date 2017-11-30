@@ -11,12 +11,15 @@ import android.view.ViewGroup;
 public class ViewUtil {
     private Context mContext;
     private static ViewUtil instance;
-    private ViewUtil(Context pContext){
+    private UiUtil mUiUtil;
+
+    private ViewUtil(Context pContext,int baseWidth,int baseHeight){
         mContext = pContext;
+        mUiUtil = UiUtil.getInstance(mContext,baseWidth,baseHeight);
     }
-    public static ViewUtil getInstance(Context pContext){
+    public static ViewUtil getInstance(Context pContext,int baseWidth,int baseHeight){
         if(instance==null) {
-            instance = new ViewUtil(pContext);
+            instance = new ViewUtil(pContext,baseWidth,baseHeight);
         }
         return instance;
     }
@@ -24,22 +27,22 @@ public class ViewUtil {
     public void setLayoutParams(View view, int width, int height, int left, int top, int right, int bottom){
         ViewGroup.MarginLayoutParams vLayoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
         if(width!= ViewGroup.LayoutParams.MATCH_PARENT && width!=ViewGroup.LayoutParams.WRAP_CONTENT) {
-            vLayoutParams.width = UiUtil.getInstance(mContext).getWidth(width);
+            vLayoutParams.width = mUiUtil.getWidth(width);
         }else {
             vLayoutParams.width = width;
         }
 
         if(height!=ViewGroup.LayoutParams.MATCH_PARENT && height!=ViewGroup.LayoutParams.WRAP_CONTENT) {
-            vLayoutParams.height = UiUtil.getInstance(mContext).getHeight(height);
+            vLayoutParams.height = mUiUtil.getHeight(height);
         }else {
             vLayoutParams.height = height;
         }
 
         //横向上的用getWidth,竖着的用getHeight
-        vLayoutParams.leftMargin = UiUtil.getInstance(mContext).getWidth(left);
-        vLayoutParams.rightMargin = UiUtil.getInstance(mContext).getWidth(right);
-        vLayoutParams.topMargin = UiUtil.getInstance(mContext).getHeight(top);
-        vLayoutParams.bottomMargin = UiUtil.getInstance(mContext).getHeight(bottom);
+        vLayoutParams.leftMargin = mUiUtil.getWidth(left);
+        vLayoutParams.rightMargin = mUiUtil.getWidth(right);
+        vLayoutParams.topMargin = mUiUtil.getHeight(top);
+        vLayoutParams.bottomMargin = mUiUtil.getHeight(bottom);
 
         view.setLayoutParams(vLayoutParams);
 
