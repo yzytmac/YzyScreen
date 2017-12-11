@@ -1,5 +1,6 @@
 # ScreenAdaptive
 最屌的屏幕适配框架-100%适配所有屏幕  
+原理：控件像素 =（ui像素/ui屏幕像素）* 手机屏幕像素；手机屏幕像素是从每部手机动态获取的，所以能为任何手机适配，也不需要转化成dp来适配。  
 使用步骤：  
 1、在gradle中依赖compile 'com.github.yzytmac:yzyscreenadaptive:1.0.0'  
 2、在java代码中拿到控件  
