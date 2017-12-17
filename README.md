@@ -12,3 +12,4 @@ widthPx和heightPx就是控件标注的像素值，因为美工给的都是像�
 控件中加入app:layout_percent_height="0.5"和app:layout_percent_width="0.5"属性即可设置控件在布局中的百分比。  
 此时xml文件中的控件宽高只能设置成wrap_content或match_parent，设置成具体值将会导致百分比无效。  
 5、执行优先级从高到低为：setLayoutParams——>具体宽高——>百分比
+6、有任何疑问欢迎发邮件到yzytmac@163.com 欢迎提交代码 
